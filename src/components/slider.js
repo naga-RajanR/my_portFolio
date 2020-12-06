@@ -53,12 +53,12 @@ const projects = [
     },
 ]
 
-const images = [
-    "https://d274ft55l0imju.cloudfront.net/hotels_app_img/hotelhero.png",
-    "https://p4.wallpaperbetter.com/wallpaper/106/820/998/tourism-travel-london-england-wallpaper-preview.jpg",
-    "https://www.teahub.io/photos/full/88-880026_web-design-images-hd.jpg",
-    "https://fundingsage.com/wp-content/uploads/2016/01/business-3152586_1280-1024x739.jpg"
-];
+// const images = [
+//     "https://d274ft55l0imju.cloudfront.net/hotels_app_img/hotelhero.png",
+//     "https://p4.wallpaperbetter.com/wallpaper/106/820/998/tourism-travel-london-england-wallpaper-preview.jpg",
+//     "https://www.teahub.io/photos/full/88-880026_web-design-images-hd.jpg",
+//     "https://fundingsage.com/wp-content/uploads/2016/01/business-3152586_1280-1024x739.jpg"
+// ];
 
 const SingleCardWrapper = styled.div`
 padding:10px 13px;
@@ -117,8 +117,8 @@ export default class Slider extends Component {
                     renderDotsOutside={false}
                     responsive={responsive}
                 >
-                    {projects.map(x => {
-                        return (<div>
+                    {projects.map((x,i) => {
+                        return (<div key={i}>
                             <Image
                                 src={x.image}
                             />
@@ -126,7 +126,7 @@ export default class Slider extends Component {
                                 <Title>{x.title}</Title>
                                 <Description>{x.description}</Description>
                                 <ListsWrapper>
-                                {x.techs.map(tech => { return <List>{tech}</List> })}
+                                {x.techs.map((tech,ind) => { return <List key={ind}>{tech}</List> })}
                                 </ListsWrapper>
                             </SingleCardWrapper>
                         </div>

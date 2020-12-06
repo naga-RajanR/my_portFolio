@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-
+import Pdf from '../images/resume.pdf'
 import Button from '../components/button'
 import Particles from 'react-particles-js';
 
@@ -155,16 +155,14 @@ export default class particle extends Component {
                 className="particleWrapper"
                 params={config} />
                 <MenuWrapper className='menus'>
-                    <MenuItem><a target='_blank' href='https://www.linkedin.com/in/nagarajan-r-aa6647192/'><i  className="fab fa-linkedin fa-2x primary-text"></i></a></MenuItem>
-                    <MenuItem><a target='_blank' href='https://drive.google.com/file/d/19l7wyHoeWgSY47Yb8ja27CRLaH1sZBh7/view?usp=sharing'><i className="fas fa-file-pdf primary-text fa-2x"></i></a></MenuItem>
-                    {/* <MenuItem className={this.props.name==='projects'?'active':''} onClick={()=>this.props.selectTab('projects')}>Projects</MenuItem> */}
+                    <MenuItem><a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/nagarajan-r-aa6647192/'><i  className="fab fa-linkedin fa-2x primary-text"></i></a></MenuItem>
+                    <MenuItem><a target='_blank' rel="noopener noreferrer" href={Pdf}><i className="fas fa-file-pdf primary-text fa-2x"></i></a></MenuItem>
                 </MenuWrapper>
               <div className='responsive-section'>
                 <h1 className='text-light'>Responive is loading...</h1>
               </div>
               <div className='intro-section'>
                 <h1 className='text-light'>Hello I'm <span className='highlight-text'>Nagarajan..</span></h1>
-                <a></a>
                <Button classname='home-button' click={this.props.onclick} icon='fa fa-arrow-right' name='View my works'></Button>
                {/* <div class="g-signin2" data-onsuccess={this.fbShare} data-theme="dark"></div> */}
               </div>

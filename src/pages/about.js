@@ -81,7 +81,7 @@ export default class particle extends Component {
         let elements = this.state.data
             .slice(this.state.offset, this.state.offset + this.state.perPage)
             .map((data, index) => {
-                return <div className='mx-10'>
+                return <div key={index} className='mx-10'>
                     <Header>
                         <i className={`${data.icon} fa-3x primary-text`}></i>
                         <h3><strong>{data.title}</strong></h3>

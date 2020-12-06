@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 // import { Controller, Scene } from 'react-scrollmagic';
 import $ from 'jquery'
-import Scrollspy from 'react-scrollspy'
+// import Scrollspy from 'react-scrollspy'
 import Home from './pages/home'
 import About from './pages/about'
 import Projects from './pages/project'

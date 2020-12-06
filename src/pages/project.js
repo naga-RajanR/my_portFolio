@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 
 import Slider from '../components/slider'
-import Button from '../components/button'
+// import Button from '../components/button'
 
 const ProjectWrapper = styled.div`
 // height:100vh;
@@ -30,7 +30,7 @@ export default class particle extends Component {
                 <h2 className='text-align-center font-lg'>Projects</h2>
                 <Slider/>
                 <Footer>
-                <i onClick={this.props.toTop} className=" cursorfas fa-chevron-up fa-2x primary-text"></i>
+                <i onClick={this.props.toTop} className=" cursor fas fa-chevron-up fa-2x primary-text"></i>
                 </Footer>
             </ProjectWrapper>
         )
