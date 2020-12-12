@@ -158,9 +158,9 @@ export default class particle extends Component {
                     <MenuItem><a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/nagarajan-r-aa6647192/'><i  className="fab fa-linkedin fa-2x primary-text"></i></a></MenuItem>
                     <MenuItem><a target='_blank' rel="noopener noreferrer" href={Pdf}><i className="fas fa-file-pdf primary-text fa-2x"></i></a></MenuItem>
                 </MenuWrapper>
-              <div className='responsive-section'>
+              {/* <div className='responsive-section'>
                 <h1 className='text-light'>Responive is loading...</h1>
-              </div>
+              </div> */}
               <div className='intro-section'>
                 <h1 className='text-light'>Hello I'm <span className='highlight-text'>Nagarajan..</span></h1>
                <Button classname='home-button' click={this.props.onclick} icon='fa fa-arrow-right' name='View my works'></Button>

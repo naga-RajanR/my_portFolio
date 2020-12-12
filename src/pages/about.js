@@ -23,11 +23,20 @@ justify-content:space-between;
 aluign-items:center;
 margin-top:20px;
 padding:0px 20px;
+@media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
 `
 const Profile = styled.div`
 text-align:center;
 width:42%;
 // padding:0px 20;
+@media (max-width: 768px) {
+    width:100%;
+  }
 `
 const About = styled.div`
 padding:0px;
@@ -38,6 +47,9 @@ p{
     margin:0px;
 }    
 }
+@media (max-width: 768px) {
+    width:100%;
+  }
 `
 const ProfileImage = styled.img`
 clip-path: polygon(25% 0,100% 0,75% 100%,0 100%);

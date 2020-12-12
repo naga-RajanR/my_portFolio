@@ -9,24 +9,24 @@ const responsive = {
             max: 3000,
             min: 1024
         },
-        items: 3,
+        items: 4,
         partialVisibilityGutter: 40
     },
     mobile: {
         breakpoint: {
-            max: 464,
+            max: 600,
             min: 0
         },
         items: 1,
-        partialVisibilityGutter: 30
+        partialVisibilityGutter: 0
     },
     tablet: {
         breakpoint: {
             max: 1024,
-            min: 464
+            min: 600
         },
         items: 2,
-        partialVisibilityGutter: 30
+        partialVisibilityGutter: 0
     }
 }
 
@@ -102,18 +102,19 @@ export default class Slider extends Component {
                     arrows={false}
                     autoPlay={true}
                     autoPlaySpeed={2000}
-                    centerMode={true}
+                    // centerMode={true}
                     className="project-slider"
                     containerClass="container-with-dots"
                     dotListClass=""
                     draggable={false}
-                    focusOnSelect={false}
+                    focusOnSelect={true}
                     infinite={true}
                     itemClass="single-item"
                     keyBoardControl
                     minimumTouchDrag={80}
-                    partialVisbile={false}
+                    partialVisbile={true}
                     renderButtonGroupOutside={false}
+                    slidesToSlide={1}
                     renderDotsOutside={false}
                     responsive={responsive}
                 >
