@@ -37,12 +37,12 @@ const projects = [
         image: 'https://d274ft55l0imju.cloudfront.net/hotels_app_img/hotelhero.png'
     },
     {
-        title: 'Connections', description: "Connections is the Belgium travel agency project of its available tourism packages and it's a pre booking online application.",
+        title: 'Trips', description: "Connections is the Belgium travel agency project of its available tourism packages and it's a pre booking online application.",
         techs: ['React JS', 'Redux',],
         image: 'https://p4.wallpaperbetter.com/wallpaper/106/820/998/tourism-travel-london-england-wallpaper-preview.jpg'
     },
     {
-        title: 'Bazaartrack', description: "To sell & buy the products like OLX without any intermediator and have other features like connecting with other users and following them.",
+        title: 'OLX-Clone', description: "To sell & buy the products like OLX without any intermediator and have other features like connecting with other users and following them.",
         techs: ['React JS', 'Redux', 'PWA', 'SEO','Google maps'],
         image: 'https://fundingsage.com/wp-content/uploads/2016/01/business-3152586_1280-1024x739.jpg'
     },
@@ -51,14 +51,8 @@ const projects = [
         techs: ['React JS', 'Redux','Pusher'],
         image: 'https://www.teahub.io/photos/full/88-880026_web-design-images-hd.jpg'
     },
+    
 ]
-
-// const images = [
-//     "https://d274ft55l0imju.cloudfront.net/hotels_app_img/hotelhero.png",
-//     "https://p4.wallpaperbetter.com/wallpaper/106/820/998/tourism-travel-london-england-wallpaper-preview.jpg",
-//     "https://www.teahub.io/photos/full/88-880026_web-design-images-hd.jpg",
-//     "https://fundingsage.com/wp-content/uploads/2016/01/business-3152586_1280-1024x739.jpg"
-// ];
 
 const SingleCardWrapper = styled.div`
 padding:10px 13px;
